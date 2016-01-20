@@ -1,0 +1,22 @@
+<%= @message %>
+<% content_for :page_title do %>
+    <%= @page_title %> 
+<% end %>
+<% content_for :title do %>
+    <%= @title %> 
+<% end %>
+<% content_for :subtitle do %>
+    <%= @subtitle %> 
+<% end %>
+<% content_for :message do %>
+<div class="row">
+<div class="col-md-5">
+    <%= @message %> 
+    <p><form action="/" method="get"><input type="submit" value="TRY AGAIN"></form></p>
+</div>
+<div>
+    <div class="badge"><img src="https://media.licdn.com/mpr/mpr/shrink_100_100/p/3/000/055/23a/187304b.jpg" alt="Martin Carrero-Schmidt"></div>
+    <h3>About the Author</h3>
+    <p>Martin Carrero-Schmidt has been exploring web technologies for more than 15 years. As owner of MCS Wewb Solutions, he has extensive experience in PHP, HTML, CSS, MySQL, jquery, graphic design, copy writing and most recently Ruby, Sinatra, GIT and Bootstrap. He has built scores of web sites and web apps for clients both small and international.</p>
+</div>
+<% end %>

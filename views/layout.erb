@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= yield_content(:page_title) %></title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style type="text/css">
+    body{font-family:sans-serif;color:#777;}
+    h1{color:#333;}
+    .badge{float:right;background:none;}
+    .badge img{border-radius:50%;margin:0 0 1em 1em;box-shadow:2px 3px 10px #000;}
+    .error{color:#F00;font-weight:bold;}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header"><h1><%= yield_content(:title) %></h1></div>
+    <hr>
+    <h3><%= yield_content(:subtitle) %></h3>
+    <div class="well"><%= yield_content(:message) %></div>
+</div>
+</body>
+</html>
